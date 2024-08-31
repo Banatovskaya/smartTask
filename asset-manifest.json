@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/smartTask/static/css/main.3202d2e2.css",
+    "main.js": "/smartTask/static/js/main.0d42e3fc.js",
+    "static/js/453.c1019117.chunk.js": "/smartTask/static/js/453.c1019117.chunk.js",
+    "index.html": "/smartTask/index.html",
+    "main.3202d2e2.css.map": "/smartTask/static/css/main.3202d2e2.css.map",
+    "main.0d42e3fc.js.map": "/smartTask/static/js/main.0d42e3fc.js.map",
+    "453.c1019117.chunk.js.map": "/smartTask/static/js/453.c1019117.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3202d2e2.css",
+    "static/js/main.0d42e3fc.js"
+  ]
+}
