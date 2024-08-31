@@ -1,15 +1,12 @@
-import { useGetUsersQuery } from "../../services/postServise";
 import "./users.css";
 import { User } from "../../interfaces";
+import { useSelector} from "react-redux/es/hooks/useSelector";
+import { RootState } from "../../store/store";
 
-export const UsersPage = () => {
-  const { data: users = [], isLoading, error } = useGetUsersQuery();
+export const UsersPage = () => { 
+    const users = useSelector(
+        (state:RootState) => state.usersListReducer.usersData)
 
-  if (isLoading) return <div className="p-10 text-xs">...LOADING</div>;
-
-  if (error) return <h1 className="p-10">ERROR</h1>; // nuw we dont need err, it is just doesnt show
-
-  console.log(users);
   return (
     <>
       <h1 className="header">USERS LIST</h1>
@@ -24,7 +21,7 @@ export const UsersPage = () => {
             </div>
 
             <div className="search-row">
-              <input className="name" type="text" placeholder="Search by User" />
+              <input className="name" type="text" placeholder="Search by Name" />
               <input className="userName" type="text" placeholder="Search by Username" />
               <input className="email" type="text" placeholder="Search by Email" />
               <input className="phone" type="text" placeholder="Search by Phone" />
