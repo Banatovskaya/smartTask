@@ -1,12 +1,13 @@
 import { configureStore} from '@reduxjs/toolkit';
 import { postAPI } from '../services/postServise';
-import usersListReducer from './users.slice'
-
+import usersListReducer from './users.slice';
+import filtersReducer from './filter.slice'
 
 export const store = configureStore({
   reducer: {
       [postAPI.reducerPath]: postAPI.reducer,
-      usersListReducer
+      usersListReducer,
+      filtersReducer
   },
   middleware: (getDefaultMiddleware) =>
   getDefaultMiddleware().concat(postAPI.middleware),
