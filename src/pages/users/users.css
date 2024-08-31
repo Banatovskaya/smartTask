@@ -1,5 +1,61 @@
 .header {
     font-size:20px;
+    text-align: center;    
+}
+
+.users-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around; 
+    font-size:22px;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.user {
+    display:flex;
+    justify-content: space-around; 
+    padding: 10px
+}
+
+.name {
+    width: 200px;
+}
+.userName {
+    width: 200px; 
+}
+
+.email {
+    width: 300px;
+}
+
+.phone {
+    width: 280px;
+}
+
+.search-row {
+    display:flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-color:#B4B4B4;
+    height:50px;
+    margin-bottom:20px;
+}
+
+.search-row > input {
+   border: none;
+   height:30px;
+}
+
+.no-data {
     text-align: center;
-    
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 50px;
 }
